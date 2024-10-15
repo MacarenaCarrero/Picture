@@ -20,5 +20,13 @@ ul {
 }
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "montserrat", sans-serif;
+  background-color: #f2eae2;
+}
+.card {
+  width: 343px;
+  height: 611px;
+}
+.image {
+  width: 343px;
 }
