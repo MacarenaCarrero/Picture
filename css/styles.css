@@ -23,10 +23,188 @@ body {
   font-family: "montserrat", sans-serif;
   background-color: #f2eae2;
 }
-.card {
-  width: 343px;
-  height: 611px;
+.container{
+  display: flex;
+  justify-content: center;
+  
 }
+
+@media screen and (width>768px){
+  .container{
+    justify-content: center;
+    margin-top: 100px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 343px;
+  height: 611px ;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+}
+
+@media screen and (width>768px){
+  .card{
+    flex-direction: row;
+    width: 600px;
+    height: 450px;
+  }
+}
+.second-card{
+display: flex;
+flex-direction: column;
+}
+
+@media screen and (width>768px){
+  .second-card{
+    width: 300px; 
+    padding-top: 32px;
+    
+  }
+}
+
 .image {
   width: 343px;
+  border-radius: 8px 8px 0 0;
+  margin-bottom:24px ;
+}
+
+@media screen and (width>768px){
+  .image{
+    width: 300px;
+    height: 450px;
+    border-radius: 8px 0 0 8px;
+  }
+}
+.product{
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: #6C7289;
+  margin-bottom: 12px;
+  padding-left: 24px;
+}
+
+@media screen and (width>768px){
+  .product{
+    margin-bottom: 20px;
+  }
+}
+
+
+.name{
+  font-family: "fraunces";
+  font-size: 32px;
+  font-weight:  700;
+  line-height: 32px;
+  color:#1C232B;
+  margin: 0;
+  padding-left: 24px;
+}
+
+@media screen and (width>768px){
+  .name{
+    width: 236px;
+    text-align:start;
+  }
+}
+
+.name-type{
+  font-family: "fraunces";
+  font-size: 32px;
+  font-weight:  700;
+  line-height: 32px;
+  color:#1C232B;
+  margin: 0;
+  margin-bottom: 16px;
+  padding-left: 24px;
+}
+.description{
+  margin: 0;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight:  500;
+  color: #6C7289;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 16px;
+}
+
+@media screen and (width>768px){
+  .description{
+margin-bottom:29px ;
+  }
+}
+
+.price{
+  display: flex;
+
+  width: 194px;
+  height: 32px;
+  padding-left: 24px;
+  margin-bottom: 20px;
+}
+
+@media screen and (width>768px){
+  .price{
+    margin-bottom: 30px;
+  }
+}
+
+.discount{
+  margin: 0;
+  font-family: "fraunces";
+  font-size: 32px;
+  font-weight:  700;
+  line-height: 32px;
+  color:#3D8168;
+  margin-bottom: 16px;
+  margin-right: 19px;
+  
+}
+.litle-price{
+  margin: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #6C7289;
+  line-height: 23px;
+  text-decoration: line-through;
+}
+.icono-cart{
+  width: 14px;
+  height: 16px;
+  margin-right: 16px;
+}
+.cart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 295px;
+  height: 48px;
+  border-radius: 8px;
+  background-color:#3D8168 ;
+  font-size: 14px;
+  font-weight:500 ;
+  color: white;
+  margin-left: 24px;
+  
+}
+
+@media screen and (width>768px){
+  .cart{
+    width: 236px;
+  }
+}
+
+@media (hover:hover){
+.cart:hover{
+  background-color:#1A4032 ;
+}
+}
+
+.bottom-cart{
+margin: 0;
 }
